@@ -105,11 +105,11 @@
 			]
 		},
 		"contract/faucet.sol": {
-			"keccak256": "0x971d32d5764d23b8cf0188bf025cd96ecefa5c8d8a4a4334a66a98df70847a91",
+			"keccak256": "0x937415e8a8ddc481a6ef2dfaafc07848b8739d28c0a1eecf6ad0cbe868836fef",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7db1ee94fbd30be1fbe95d8df9fdef5a40bbb81cb18b22475101929e9f5f1f6d",
-				"dweb:/ipfs/QmWk7KVxRuCfZEwqCK4X17QXKMCrE6c6q4DfeKSujPT1yS"
+				"bzz-raw://be28803f2c69699d10506b88c939ee11c97c069bed9db99f7cecaa8fdd6e2faf",
+				"dweb:/ipfs/QmQpptgmRxh2h5deXGHujM5G1iFWSuhL6h74gFDFcnkPAH"
 			]
 		}
 	},

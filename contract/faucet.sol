@@ -5,9 +5,9 @@ import "./IERC20.sol";
 
 contract faucet{
 
-    uint256 public amountAllowed = 100;
-    address public tokenContractAddress;
-    mapping(address => bool) requestAddress;
+    uint256 public amountAllowed = 100;   // Number of claims per time
+    address public tokenContractAddress;  // ERC20 contract address
+    mapping(address => bool) requestAddress;  // received
 
 
     event SendToken(address indexed Receiver,uint256 indexed Amount);
