@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract MyToken is ERC20, ERC20Burnable, Pausable, Ownable {
-    constructor() ERC20("MyToken", "MTK") {}
+    constructor() ERC20("XMax", "XMX") {}
 
     function pause() public onlyOwner {
         _pause();

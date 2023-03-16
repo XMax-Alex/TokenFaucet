@@ -1,0 +1,257 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "ERC20 接口合约.",
+			"events": {
+				"Approval(address,address,uint256)": {
+					"details": "释放条件：当 `value` 单位的货币从账户 (`owner`) 授权给另一账户 (`spender`)时."
+				},
+				"Transfer(address,address,uint256)": {
+					"details": "释放条件：当 `value` 单位的货币从账户 (`from`) 转账到另一账户 (`to`)时."
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"allowance(address,address)": {
+					"details": "返回`owner`账户授权给`spender`账户的额度，默认为0。 当{approve} 或 {transferFrom} 被调用时，`allowance`会改变."
+				},
+				"approve(address,uint256)": {
+					"details": "调用者账户给`spender`账户授权 `amount`数量代币。 如果成功，返回 `true`. 释放 {Approval} 事件."
+				},
+				"balanceOf(address)": {
+					"details": "返回账户`account`所持有的代币数."
+				},
+				"totalSupply()": {
+					"details": "返回代币总供给."
+				},
+				"transfer(address,uint256)": {
+					"details": "转账 `amount` 单位代币，从调用者账户到另一账户 `to`. 如果成功，返回 `true`. 释放 {Transfer} 事件."
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "通过授权机制，从`from`账户向`to`账户转账`amount`数量代币。转账的部分会从调用者的`allowance`中扣除。 如果成功，返回 `true`. 释放 {Transfer} 事件."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract/IERC20.sol": "IERC20"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract/IERC20.sol": {
+			"keccak256": "0x348503cbba1d9c9ca51cdbfaac561ac2d32f7956a96e30997205a9f2cb06629b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3238430781cc748b196db3779e1ae2b94a5c69c59051a7093c36541c65a58be0",
+				"dweb:/ipfs/QmYUVqT4UM2QW5zBJCbmxjGpwGB8BsA2PqUiujFoEW6mHJ"
+			]
+		}
+	},
+	"version": 1
+}

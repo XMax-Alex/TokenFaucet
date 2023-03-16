@@ -1,0 +1,117 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenContractAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "Receiver",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "Amount",
+						"type": "uint256"
+					}
+				],
+				"name": "SendToken",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "amountAllowed",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "requestTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenContractAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract/faucet.sol": "faucet"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract/IERC20.sol": {
+			"keccak256": "0x348503cbba1d9c9ca51cdbfaac561ac2d32f7956a96e30997205a9f2cb06629b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3238430781cc748b196db3779e1ae2b94a5c69c59051a7093c36541c65a58be0",
+				"dweb:/ipfs/QmYUVqT4UM2QW5zBJCbmxjGpwGB8BsA2PqUiujFoEW6mHJ"
+			]
+		},
+		"contract/faucet.sol": {
+			"keccak256": "0x971d32d5764d23b8cf0188bf025cd96ecefa5c8d8a4a4334a66a98df70847a91",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7db1ee94fbd30be1fbe95d8df9fdef5a40bbb81cb18b22475101929e9f5f1f6d",
+				"dweb:/ipfs/QmWk7KVxRuCfZEwqCK4X17QXKMCrE6c6q4DfeKSujPT1yS"
+			]
+		}
+	},
+	"version": 1
+}
